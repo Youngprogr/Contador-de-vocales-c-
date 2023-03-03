@@ -1,0 +1,32 @@
+#include <iostream>
+#include<stdlib.h>
+#include <conio.h>
+#include <string.h>
+
+using namespace std;
+int main()
+{
+  char frase[30];
+  int a=0,e=0,li=0,o=0,u=0;
+  cout<<"digite un frase: ";
+  cin.getline(frase,30,'\n');
+    for (int i=0;i<30;i++)
+    {
+        switch (frase[i])
+        {
+            case'a':a++;break;
+            case'e':e++;break;
+            case'i':li++;break;
+            case'o':o++;break;
+            case'u':u++;break;
+        }
+    }
+    cout<<"a: "<<a<<endl;
+    cout<<"e: "<<e<<endl;
+    cout<<"i: "<<li<<endl;
+    cout<<"o: "<<o<<endl;
+    cout<<"u: "<<u<<endl;
+
+  return 0;
+
+}
